@@ -52,8 +52,7 @@ Expect (yourFunctionName("given input")).toEqual("expected output");
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* _AddressBook.prototype.deleteContact does not appear to work_
 
 ## License
 *[MIT](https://choosealicense.com/licenses/mit/)*
