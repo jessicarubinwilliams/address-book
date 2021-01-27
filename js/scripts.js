@@ -41,7 +41,7 @@ Contact.prototype.fullName = function() {
 let addressBook = new AddressBook();
 
 function displayContactDetails(addressBookToDisplay) {
-  let contactList = $("ul#contacts");
+  let contactsList = $("ul#contacts");
   let htmlForContactInfo = "";
   Object.keys(addressBookToDisplay.contacts).forEach(function(key) {
     const contact = addressBookToDisplay.findContact(key);
