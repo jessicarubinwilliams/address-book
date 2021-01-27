@@ -40,6 +40,16 @@ Contact.prototype.fullName = function() {
 //User Interface Logic -------
 let addressBook = new AddressBook();
 
+function displayContactDetails(addressBookToDisplay) {
+  let contactList = $("ul#contacts");
+  let htmlForContactInfo = "";
+  Object.keys(addressBookToDisplay.contacts).forEach(function(key) {
+    const contact = addressBookToDisplay.findContact(key);
+    htmlForContactInfo += "<li id=" + contact.id + ">" + contact.firstName + " " + contact.lastName + "</li>";
+  })
+  contactsList.html(htmlForContactInfo);
+};
+
 $(document).ready(function() {
   $("form#new-contact").submit(function(event) {
     event.preventDefault();
