@@ -35,31 +35,11 @@ _[More Event Delegation](https://www.learnhowtoprogram.com/intermediate-javascri
 
 _Alternatively,_
 
-* _Direct your browser to a [live version on GitHub Pages.] (jessicarubinwilliams.github.io/island-resort-webpage/index.html)_
-
-_Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again._
-
-## Specifications
-
-_Behavior_
-_Input Example_
-_Output Example_
-
-_The program should handle:_
-_When it receives:_
-_It should return:_
-
-
-## Tests
-
-Describe: yourFunctionName()
-Test: "It does something"
-Expect (yourFunctionName("given input")).toEqual("expected output");
-
+* _Direct your browser to a [live version on GitHub Pages.] (jessicarubinwilliams.github.io/address-book/index.html)_
 
 ## Known Bugs
 
-* _AddressBook.prototype.deleteContact does not appear to work_
+* _No known bugs_
 
 ## License
 *[MIT](https://choosealicense.com/licenses/mit/)*
