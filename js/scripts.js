@@ -38,7 +38,7 @@ Contact.prototype.fullName = function() {
 }
 
 //User Interface Logic -------
-let AddressBook = new AddressBook();
+let addressBook = new AddressBook();
 
 $(document).ready(function() {
   $("form#new-contact").submit(function(event) {
@@ -47,7 +47,7 @@ $(document).ready(function() {
     const inputtedLastName = $("input#new-last-name").val();
     const inputtedPhoneNumber = $("input#new-phone-number").val();
     let newContact = new Contact(inputtedFirstName, inputtedLastName, inputtedPhoneNumber);
-    AddressBook.addContact(newContact);
-    console.log(addressBook.contacts);
+    addressBook.addContact(newContact);
+    console.log(addressBook.contacts)
   });
 });
