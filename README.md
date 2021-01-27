@@ -16,7 +16,14 @@
 
 ## Description
 
-_This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have. Balance between a summary of the project and a tame market pitch._
+_This is a project was created from multiple lessons from Epicodus Bootcamp:_
+_[Objects Within Objects](https://www.learnhowtoprogram.com/intermediate-javascript/object-oriented-javascript/address-book-objects-within-objects)_
+_[Unique IDs](https://www.learnhowtoprogram.com/intermediate-javascript/object-oriented-javascript/address-book-unique-ids)_
+_[Finding and Deleting Contacts](https://www.learnhowtoprogram.com/intermediate-javascript/object-oriented-javascript/address-book-finding-and-deleting-contacts)_
+_[User Interface](https://www.learnhowtoprogram.com/intermediate-javascript/object-oriented-javascript/address-book-user-interface)_
+_[Adding Interactivity](https://www.learnhowtoprogram.com/intermediate-javascript/object-oriented-javascript/address-book-adding-interactivity)_
+_[Introduction to Event Delegation](https://www.learnhowtoprogram.com/intermediate-javascript/object-oriented-javascript/address-book-introduction-to-event-delegation)_
+_[More Event Delegation](https://www.learnhowtoprogram.com/intermediate-javascript/object-oriented-javascript/address-book-more-event-delegation)_
 
 ## Setup/Installation Requirements
 
