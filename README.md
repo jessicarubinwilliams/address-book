@@ -17,6 +17,7 @@
 ## Description
 
 _This is a project was created from multiple lessons from Epicodus Bootcamp:_
+_[Constructor and Prototype Methods](https://www.learnhowtoprogram.com/intermediate-javascript-part-time-c-and-react-track/object-oriented-javascript/constructor-and-prototype-methods)_
 _[Objects Within Objects](https://www.learnhowtoprogram.com/intermediate-javascript/object-oriented-javascript/address-book-objects-within-objects)_
 _[Unique IDs](https://www.learnhowtoprogram.com/intermediate-javascript/object-oriented-javascript/address-book-unique-ids)_
 _[Finding and Deleting Contacts](https://www.learnhowtoprogram.com/intermediate-javascript/object-oriented-javascript/address-book-finding-and-deleting-contacts)_
@@ -32,10 +33,6 @@ _[More Event Delegation](https://www.learnhowtoprogram.com/intermediate-javascri
 * _Clone this project with the following git command `$ git clone <https://github.com/jessicarubinwilliams/address-book>`_
 * _Navigate to the top level of the repository with the command `$ cd address-book`_
 * _Open index.html in the browser of your choice with the command `$ open index.html`_.
-
-_Alternatively,_
-
-* _Direct your browser to a [live version on GitHub Pages.] (jessicarubinwilliams.github.io/address-book/index.html)_
 
 ## Known Bugs
 
