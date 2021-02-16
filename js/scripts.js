@@ -40,3 +40,19 @@ function Contact(firstName, lastName, phoneNumber) {
 Contact.prototype.fullName = function () {
   return this.firstName + " " + this.lastName;
 }
+
+// User Interface Logic -------
+
+let addressBook = new AddressBook(); //this is a global variable as it is mimicking a database which needs to be globally scoped
+
+$(document).ready(function() {
+  $("form#new-contact").submit(function(event) {
+    event.preventDefault();
+    const inputtedFirstName = $("input#new-first-name").val();
+    const inputtedLastName = $("input#new-last-name").val();
+    const inputtedPhoneNumber = $("input#new-phone-number").val();
+    let newContact = new Contact(inputtedFirstName, inputtedLastName, inputtedPhoneNumber);
+    addressBook.addContact(newContact);
+    console.log(addressBook.contacts);
+  });
+});
