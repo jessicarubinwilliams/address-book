@@ -49,6 +49,11 @@ function attachContactListeners() {
   $("ul#contacts").on("click", "li", function() {
     showContact(this.id); //this refers the li in the on() method. The li will always correspond to the actual ID of the contact because our displayContactDetails() function establishes the following: "<li id=" + contact.id + ">"
   });
+  $("#buttons").on("click", ".deleteButton", function() {
+    addressBook.deleteContact(this.id); //this refers the .deleteButton in the on() method. .deleteButton is dynamically created in showContact();
+    $("#show-contact").hide();
+    displayContactDetails(addressBook);
+  });
 };
 
 function showContact(contactId) {
