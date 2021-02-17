@@ -47,7 +47,7 @@ let addressBook = new AddressBook(); //this is a global variable as it is mimick
 
 function attachContactListeners() {
   $("ul#contacts").on("click", "li", function() {
-    console.log("This id of this <li> is " + this.id + ".");
+    showContact(this.id); //this refers the li in the on() method. The li will always correspond to the actual ID of the contact because our displayContactDetails() function establishes the following: "<li id=" + contact.id + ">"
   });
 };
 
