@@ -46,16 +46,16 @@ Contact.prototype.fullName = function () {
 let addressBook = new AddressBook(); //this is a global variable as it is mimicking a database which needs to be globally scoped
 
 function attachContactListeners() {
-  $("ul#contacts").on("click". "li", function() {
+  $("ul#contacts").on("click", "li", function() {
     console.log("This id of this <li> is " + this.id + ".");
-  }):
-}:
+  });
+};
 
-function displayContactDetails(addressBooktoDisplay) {
+function displayContactDetails(addressBookToDisplay) {
   let contactsList = $("ul#contacts");
   let htmlForContactInfo = "";
-  Object.keys(addressBooktoDisplay.contacts).forEach(function(key) {
-    const contact = addressBooktoDisplay.findContact(key);
+  Object.keys(addressBookToDisplay.contacts).forEach(function(key) {
+    const contact = addressBookToDisplay.findContact(key);
     htmlForContactInfo += "<li id=" + contact.id + ">" + contact.firstName + " " + contact.lastName + "</li>";
   });
   contactsList.html(htmlForContactInfo);
@@ -71,5 +71,5 @@ $(document).ready(function() {
     let newContact = new Contact(inputtedFirstName, inputtedLastName, inputtedPhoneNumber);
     addressBook.addContact(newContact);
     displayContactDetails(addressBook);
-  });
-});
+  })
+})
