@@ -45,6 +45,12 @@ Contact.prototype.fullName = function () {
 
 let addressBook = new AddressBook(); //this is a global variable as it is mimicking a database which needs to be globally scoped
 
+function attachContactListeners() {
+  $("ul#contacts").on("click". "li", function() {
+    console.log("This id of this <li> is " + this.id + ".");
+  }):
+}:
+
 function displayContactDetails(addressBooktoDisplay) {
   let contactsList = $("ul#contacts");
   let htmlForContactInfo = "";
@@ -56,6 +62,7 @@ function displayContactDetails(addressBooktoDisplay) {
 };
 
 $(document).ready(function() {
+  attachContactListeners();
   $("form#new-contact").submit(function(event) {
     event.preventDefault();
     const inputtedFirstName = $("input#new-first-name").val();
