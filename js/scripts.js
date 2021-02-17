@@ -51,6 +51,19 @@ function attachContactListeners() {
   });
 };
 
+function showContact(contactId) {
+  const contact = addressBook.findContact(contactId);
+  $("#show-contact").show();
+  $(".first-name").html(contact.firstName);
+  $(".last-name").html(contact.lastName);
+  $(".phone-number").html(contact.phoneNumber);
+  let buttons = $("#buttons");
+  buttons.empty();
+  buttons.append("<button class='deleteButton' id=" + contact.id + ">Delete</button>");
+}
+
+//Refactor opportunity in showContact(): Note that we aren't being incredibly efficient here - three queries to the DOM with the jQuery's html() method. If you wish, you can refactor this code later to make only one query. To do so, you simply need to remove the HTML from index.html and construct it in this method instead.
+
 function displayContactDetails(addressBookToDisplay) {
   let contactsList = $("ul#contacts");
   let htmlForContactInfo = "";
